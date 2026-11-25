@@ -1,0 +1,116 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global default-deny safety net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidFarmerProfile(data) {
+      return data.userId is string && data.userId == request.auth.uid && data.userId.size() <= 128 &&
+             data.displayName is string && data.displayName.size() >= 1 && data.displayName.size() <= 80 &&
+             data.preferredLanguage in ['en', 'kn', 'hi', 'mr'] &&
+             data.selectedCropId is string && data.selectedCropId.size() >= 1 && data.selectedCropId.size() <= 40 &&
+             data.preferredVehicleRate is number && data.preferredVehicleRate > 0 && data.preferredVehicleRate <= 500;
+    }
+
+    function isValidSavedHarvestLot(data) {
+      return data.userId is string && data.userId == request.auth.uid && data.userId.size() <= 128 &&
+             data.cropId is string && data.cropId.size() >= 1 && data.cropId.size() <= 40 &&
+             data.cropName is string && data.cropName.size() >= 1 && data.cropName.size() <= 80 &&
+             data.mandiName is string && data.mandiName.size() >= 1 && data.mandiName.size() <= 120 &&
+             data.quantityQuintals is number && data.quantityQuintals > 0 && data.quantityQuintals <= 100000 &&
+             data.modalPricePerQuintal is number && data.modalPricePerQuintal > 0 && data.modalPricePerQuintal <= 1000000 &&
+             data.netProfit is number && data.netProfit >= -10000000 && data.netProfit <= 1000000000 &&
+             data.transportCost is number && data.transportCost >= 0 && data.transportCost <= 10000000 &&
+             data.verdict in ['SELL_NOW', 'HOLD_WAIT'] &&
+             (!('notes' in data) || (data.notes is string && data.notes.size() <= 240));
+    }
+
+    match /users/{userId} {
+      allow get: if isOwner(userId) && userId is string && userId.size() <= 128;
+      allow list: if isOwner(userId);
+
+      allow create: if isOwner(userId) &&
+                       userId is string && userId.size() <= 128 &&
+                       incoming().keys().hasAll([
+                         'userId', 'displayName', 'preferredLanguage',
+                         'selectedCropId', 'preferredVehicleRate', 'createdAt', 'updatedAt'
+                       ]) &&
+                       incoming().keys().hasOnly([
+                         'userId', 'displayName', 'preferredLanguage',
+                         'selectedCropId', 'preferredVehicleRate', 'createdAt', 'updatedAt'
+                       ]) &&
+                       incoming().createdAt is timestamp && incoming().createdAt <= request.time &&
+                       incoming().updatedAt is timestamp && incoming().updatedAt <= request.time &&
+                       isValidFarmerProfile(incoming());
+
+      allow update: if isOwner(userId) &&
+                       isValidFarmerProfile(incoming()) &&
+                       incoming().userId == existing().userId &&
+                       incoming().createdAt == existing().createdAt &&
+                       incoming().updatedAt is timestamp && incoming().updatedAt <= request.time &&
+                       incoming().diff(existing()).affectedKeys().hasOnly([
+                         'displayName', 'preferredLanguage', 'selectedCropId',
+                         'preferredVehicleRate', 'updatedAt'
+                       ]);
+
+      allow delete: if isOwner(userId) && userId is string && userId.size() <= 128;
+
+      match /saved_lots/{lotId} {
+        allow get: if isOwner(userId) && isValidId(lotId);
+        allow list: if isOwner(userId);
+
+        allow create: if isOwner(userId) &&
+                         isValidId(lotId) &&
+                         incoming().keys().hasAll([
+                           'userId', 'cropId', 'cropName', 'mandiName',
+                           'quantityQuintals', 'modalPricePerQuintal', 'netProfit',
+                           'transportCost', 'verdict', 'createdAt', 'updatedAt'
+                         ]) &&
+                         incoming().keys().hasOnly([
+                           'userId', 'cropId', 'cropName', 'mandiName',
+                           'quantityQuintals', 'modalPricePerQuintal', 'netProfit',
+                           'transportCost', 'verdict', 'notes', 'createdAt', 'updatedAt'
+                         ]) &&
+                         incoming().createdAt is timestamp && incoming().createdAt <= request.time &&
+                         incoming().updatedAt is timestamp && incoming().updatedAt <= request.time &&
+                         isValidSavedHarvestLot(incoming());
+
+        allow update: if isOwner(userId) &&
+                         isValidId(lotId) &&
+                         isValidSavedHarvestLot(incoming()) &&
+                         incoming().userId == existing().userId &&
+                         incoming().createdAt == existing().createdAt &&
+                         incoming().updatedAt is timestamp && incoming().updatedAt <= request.time &&
+                         incoming().diff(existing()).affectedKeys().hasOnly([
+                           'quantityQuintals', 'netProfit', 'transportCost',
+                           'verdict', 'notes', 'updatedAt'
+                         ]);
+
+        allow delete: if isOwner(userId) && isValidId(lotId);
+      }
+    }
+  }
+}

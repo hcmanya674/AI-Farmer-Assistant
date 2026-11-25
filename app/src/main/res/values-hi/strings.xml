@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">AgriMitra</string>
+
+    <string name="nav_crops">1. फसल</string>
+    <string name="nav_compare">2. बाज़ार</string>
+    <string name="nav_forecast">3. सलाह व AI</string>
+
+    <!-- Login / Auth -->
+    <string name="login_headline">समझदारी से बेचें. हर क्विंटल पर ज़्यादा कमाएं.</string>
+    <string name="login_subtitle">भारतीय किसानों के लिए लाइव मंडी भाव, किराया मुनाफ़ा गणित और AI मूल्य सलाह</string>
+    <string name="login_feature_1_title">हाथ में शुद्ध मुनाफ़ा तुलना करें</string>
+    <string name="login_feature_1_desc">हर पास की मंडी के लिए ट्रैक्टर, पिकअप या ट्रक का खर्च अपने आप घटाता है</string>
+    <string name="login_feature_2_title">7–30 दिन का AI भाव अनुमान</string>
+    <string name="login_feature_2_desc">फसल खराब होने के जोखिम और बाज़ार रुझान से जानें कि आज बेचें या रुकें</string>
+    <string name="login_feature_3_title">फसल योजनाएं सुरक्षित रखें</string>
+    <string name="login_feature_3_desc">आपकी फसल और सहेजी गई मंडी योजनाएं आपके खाते में सुरक्षित रहती हैं</string>
+    <string name="auth_tab_signin">लॉग इन</string>
+    <string name="auth_tab_signup">नया खाता</string>
+    <string name="auth_card_title_signin">अपने खाते से लॉग इन करें</string>
+    <string name="auth_card_title_signup">नया किसान खाता बनाएं</string>
+    <string name="auth_fullname_label">पूरा नाम</string>
+    <string name="auth_fullname_hint">जैसे रमेश पाटिल</string>
+    <string name="auth_username_label">यूज़रनेम (Username)</string>
+    <string name="auth_username_hint">अक्षर, नंबर (कम से कम 3)</string>
+    <string name="auth_password_label">पासवर्ड</string>
+    <string name="auth_password_hint">कम से कम 6 अक्षर</string>
+    <string name="auth_confirm_password_label">पासवर्ड दोबारा लिखें</string>
+    <string name="auth_show_password">पासवर्ड दिखाएं</string>
+    <string name="auth_hide_password">पासवर्ड छिपाएं</string>
+    <string name="auth_signin_cta">लॉग इन करें</string>
+    <string name="auth_signup_cta">नया खाता बनाएं</string>
+    <string name="auth_or_divider">या</string>
+    <string name="auth_switch_to_signup">नए किसान हैं? नया खाता बनाएं</string>
+    <string name="auth_switch_to_signin">पहले से खाता है? लॉग इन करें</string>
+    <string name="login_google_cta">Google से जारी रखें</string>
+    <string name="login_signing_in">लॉग इन हो रहा है…</string>
+    <string name="login_privacy_note">सुरक्षित लॉगिन • आपकी खेती की योजनाएं आपके खाते में निजी रहती हैं</string>
+
+    <!-- Profile & Sign Out -->
+    <string name="sign_out">साइन आउट</string>
+    <string name="sign_out_title">AgriMitra से साइन आउट करें?</string>
+    <string name="sign_out_message">आपकी सहेजी गई फसल योजनाएं आपके खाते में सुरक्षित रहेंगी। आप कभी भी फिर लॉग इन कर सकते हैं।</string>
+    <string name="cancel">रद्द करें</string>
+
+    <string name="offline_cached">फ़ोन में सहेजा गया</string>
+    <string name="live_synced">गूगल व वेब लाइव</string>
+    <string name="retry">फिर कोशिश करें</string>
+    <string name="refresh_prices">नए भाव देखें</string>
+    <string name="quintal_unit">क्विंटल</string>
+    <string name="bags_unit">बोरी</string>
+    <string name="quintals_full">क्विंटल (100 kg)</string>
+    <string name="bags_full">बोरी (50 kg)</string>
+    <string name="per_quintal">/ क्विंटल</string>
+    <string name="per_km">/ किमी</string>
+    <string name="listen_advice">सुनें</string>
+    <string name="stop_listening">रोकें</string>
+
+    <string name="cat_all">सभी फसलें</string>
+    <string name="cat_cash">नकदी व गन्ना</string>
+    <string name="cat_grains">अनाज</string>
+    <string name="cat_spices">मसाले व बागान</string>
+    <string name="cat_vegetables">सब्ज़ियाँ</string>
+
+    <string name="home_headline">आज का सबसे ज़्यादा मुनाफ़ा पाएं</string>
+    <string name="home_subtitle">आस-पास की मंडियों की तुलना के लिए फसल और मात्रा चुनें</string>
+    <string name="step_1_crop">कदम 1 • अपनी फसल चुनें</string>
+    <string name="step_2_load">कदम 2 • फसल की मात्रा?</string>
+    <string name="step_3_vehicle">कदम 3 • गाड़ी का किराया</string>
+    <string name="search_crops_hint">फसल खोजें (जैसे गन्ना, गेहूं, प्याज)…</string>
+    <string name="compare_mandis_cta">सबसे अच्छी मंडी व मुनाफ़ा देखें</string>
+    <string name="no_crops_found">कोई फसल नहीं मिली</string>
+    <string name="no_crops_hint">गन्ना, धान, गेहूं, प्याज या सुपारी खोजें</string>
+
+    <string name="saved_plans_title">आपकी सहेजी गई फसल योजनाएं</string>
+    <string name="save_plan_cta">मुनाफ़ा योजना सहेजें</string>
+    <string name="plan_saved_toast">आपके खाते में सहेजा गया</string>
+    <string name="load_plan">खोलें</string>
+    <string name="delete_plan">हटाएं</string>
+
+    <string name="compare_title">आपकी फसल के लिए बेहतरीन मंडियां</string>
+    <string name="best_mandi_badge">सबसे ज़्यादा कमाई</string>
+    <string name="closest_mandi_badge">सबसे नज़दीक</string>
+    <string name="modal_price">आज का भाव</string>
+    <string name="distance_label">दूरी</string>
+    <string name="transport_cost">गाड़ी खर्च</string>
+    <string name="gross_value">कुल बिक्री</string>
+    <string name="net_profit">हाथ में शुद्ध पैसा</string>
+    <string name="extra_profit_msg">किराए के बाद %2$s से %1$s ज़्यादा बचत</string>
+    <string name="view_ai_forecast">अभी बेचें या रुकें? (AI सलाह)</string>
+    <string name="sources_checked_label">गूगल व कृषि वेबसाइटों से जांचा गया</string>
+    <string name="fetch_live_web_cta">गूगल से ताज़ा वेब भाव लाएं</string>
+    <string name="sync_notice_offline">फ़ोन में सहेजे गए भाव दिख रहे हैं। इंटरनेट होने पर ताज़ा भाव के लिए रिफ्रेश दबाएं।</string>
+
+    <string name="forecast_title">अभी बेचें या इंतज़ार करें?</string>
+    <string name="verdict_sell_now">अभी बेचें</string>
+    <string name="verdict_hold_wait">रुकें / भंडारण करें</string>
+    <string name="horizon_7d">7 दिन</string>
+    <string name="horizon_15d">15 दिन</string>
+    <string name="horizon_30d">30 दिन</string>
+    <string name="past_7d_legend">पिछले 7 दिन</string>
+    <string name="forecast_legend">अनुमानित भाव</string>
+    <string name="projected_price">अपेक्षित भाव</string>
+    <string name="projected_change">बदलाव</string>
+    <string name="projected_impact">फ़ायदा / नुकसान (%1$s क्विं.)</string>
+    <string name="ai_advisor_title">AgriMitra आवाज़ व AI सलाह</string>
+    <string name="ai_advisor_subtitle">वेब रुझान और मौसम पर आसान सलाह</string>
+    <string name="ai_generate_btn">सलाह पाएं</string>
+    <string name="ai_refresh_btn">सलाह ताज़ा करें</string>
+    <string name="ai_loading">बाज़ार भाव, मौसम और मांग की जांच हो रही है…</string>
+    <string name="ai_ask_title">AgriMitra से कोई भी सवाल पूछें</string>
+    <string name="ai_ask_hint">भंडारण, बारिश या त्योहार के बारे में पूछें…</string>
+    <string name="ai_send">पूछें</string>
+</resources>

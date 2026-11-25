@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">AgriMitra</string>
+
+    <string name="nav_crops">1. ಬೆಳೆ</string>
+    <string name="nav_compare">2. ಮಾರುಕಟ್ಟೆ</string>
+    <string name="nav_forecast">3. ಸಲಹೆ &amp; AI</string>
+
+    <!-- Login / Auth -->
+    <string name="login_headline">ಚುರುಕಾಗಿ ಮಾರಿ. ಪ್ರತಿ ಕ್ವಿಂಟಾಲ್‌ಗೆ ಹೆಚ್ಚು ಗಳಿಸಿ.</string>
+    <string name="login_subtitle">ಭಾರತೀಯ ರೈತರಿಗಾಗಿ ಲೈವ್ ಮಂಡಿ ದರ, ಸಾಗಣೆ ಲಾಭ ಲೆಕ್ಕ ಮತ್ತು AI ಬೆಲೆ ಸಲಹೆ</string>
+    <string name="login_feature_1_title">ಕೈಗೆ ಸಿಗುವ ನಿಜವಾದ ಲಾಭ ಹೋಲಿಸಿ</string>
+    <string name="login_feature_1_desc">ಪ್ರತಿ ಹತ್ತಿರದ ಮಂಡಿಗೆ ಟ್ರ್ಯಾಕ್ಟರ್, ಪಿಕಪ್ ಅಥವಾ ಟ್ರಕ್ ವೆಚ್ಚವನ್ನು ಕಳೆದು ನಿವ್ವಳ ಲಾಭ ತೋರಿಸುತ್ತದೆ</string>
+    <string name="login_feature_2_title">7–30 ದಿನಗಳ AI ಬೆಲೆ ಮುನ್ಸೂಚನೆ</string>
+    <string name="login_feature_2_desc">ಬೆಳೆ ಹಾಳಾಗುವ ಅಪಾಯ ಮತ್ತು ಮಾರುಕಟ್ಟೆ ಆಧಾರದಲ್ಲಿ ಇಂದು ಮಾರಬೇಕೇ ಅಥವಾ ಕಾಯಬೇಕೇ ತಿಳಿಯಿರಿ</string>
+    <string name="login_feature_3_title">ಬೆಳೆ ಯೋಜನೆಗಳನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಉಳಿಸಿ</string>
+    <string name="login_feature_3_desc">ನಿಮ್ಮ ಬೆಳೆ ಆಯ್ಕೆಗಳು ಮತ್ತು ಉಳಿಸಿದ ಮಂಡಿ ಯೋಜನೆಗಳು ನಿಮ್ಮ ಖಾತೆಯಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿರುತ್ತವೆ</string>
+    <string name="auth_tab_signin">ಲಾಗಿನ್</string>
+    <string name="auth_tab_signup">ಹೊಸ ಖಾತೆ</string>
+    <string name="auth_card_title_signin">ನಿಮ್ಮ ಖಾತೆಯಿಂದ ಲಾಗಿನ್ ಆಗಿ</string>
+    <string name="auth_card_title_signup">ಹೊಸ ರೈತ ಖಾತೆ ತೆರೆಯಿರಿ</string>
+    <string name="auth_fullname_label">ಪೂರ್ಣ ಹೆಸರು</string>
+    <string name="auth_fullname_hint">ಉದಾ. ರಮೇಶ್ ಪಾಟೀಲ್</string>
+    <string name="auth_username_label">ಬಳಕೆದಾರರ ಹೆಸರು (Username)</string>
+    <string name="auth_username_hint">ಅಕ್ಷರಗಳು, ಸಂಖ್ಯೆಗಳು (ಕನಿಷ್ಠ 3)</string>
+    <string name="auth_password_label">ಪಾಸ್‌ವರ್ಡ್</string>
+    <string name="auth_password_hint">ಕನಿಷ್ಠ 6 ಅಕ್ಷರಗಳು</string>
+    <string name="auth_confirm_password_label">ಪಾಸ್‌ವರ್ಡ್ ದೃಢೀಕರಿಸಿ</string>
+    <string name="auth_show_password">ಪಾಸ್‌ವರ್ಡ್ ತೋರಿಸಿ</string>
+    <string name="auth_hide_password">ಪಾಸ್‌ವರ್ಡ್ ಮರೆಮಾಡಿ</string>
+    <string name="auth_signin_cta">ಲಾಗಿನ್ ಆಗಿ</string>
+    <string name="auth_signup_cta">ಖಾತೆ ರಚಿಸಿ</string>
+    <string name="auth_or_divider">ಅಥವಾ</string>
+    <string name="auth_switch_to_signup">ಹೊಸ ಬಳಕೆದಾರರೇ? ಹೊಸ ಖಾತೆ ತೆರೆಯಿರಿ</string>
+    <string name="auth_switch_to_signin">ಈಗಾಗಲೇ ಖಾತೆ ಇದೆಯೇ? ಲಾಗಿನ್ ಆಗಿ</string>
+    <string name="login_google_cta">Google ಮೂಲಕ ಮುಂದುವರಿಸಿ</string>
+    <string name="login_signing_in">ಲಾಗಿನ್ ಆಗುತ್ತಿದೆ…</string>
+    <string name="login_privacy_note">ಸುರಕ್ಷಿತ ಲಾಗಿನ್ • ನಿಮ್ಮ ಕೃಷಿ ಮಾಹಿತಿ ಖಾಸಗಿಯಾಗಿರುತ್ತದೆ</string>
+
+    <!-- Profile & Sign Out -->
+    <string name="sign_out">ಸೈನ್ ಔಟ್</string>
+    <string name="sign_out_title">AgriMitra ದಿಂದ ಸೈನ್ ಔಟ್ ಆಗಬೇಕೇ?</string>
+    <string name="sign_out_message">ನಿಮ್ಮ ಉಳಿಸಿದ ಬೆಳೆ ಯೋಜನೆಗಳು ನಿಮ್ಮ ಖಾತೆಯಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿರುತ್ತವೆ. ಯಾವಾಗ ಬೇಕಾದರೂ ಮತ್ತೆ ಲಾಗಿನ್ ಆಗಬಹುದು.</string>
+    <string name="cancel">ರದ್ದುಮಾಡಿ</string>
+
+    <string name="offline_cached">ಫೋನ್‌ನಲ್ಲಿ ಉಳಿಸಲಾಗಿದೆ</string>
+    <string name="live_synced">ಗೂಗಲ್ &amp; ವೆಬ್ ಲೈವ್</string>
+    <string name="retry">ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="refresh_prices">ಹೊಸ ದರ ಪಡೆಯಿರಿ</string>
+    <string name="quintal_unit">ಕ್ವಿಂ.</string>
+    <string name="bags_unit">ಚೀಲ</string>
+    <string name="quintals_full">ಕ್ವಿಂಟಾಲ್ (100 kg)</string>
+    <string name="bags_full">ಚೀಲ (50 kg)</string>
+    <string name="per_quintal">/ ಕ್ವಿಂ.</string>
+    <string name="per_km">/ ಕಿ.ಮೀ</string>
+    <string name="listen_advice">ಕೇಳಿ</string>
+    <string name="stop_listening">ನಿಲ್ಲಿಸಿ</string>
+
+    <string name="cat_all">ಎಲ್ಲಾ ಬೆಳೆಗಳು</string>
+    <string name="cat_cash">ವಾಣಿಜ್ಯ &amp; ಕಬ್ಬು</string>
+    <string name="cat_grains">ಧಾನ್ಯಗಳು</string>
+    <string name="cat_spices">ಮಸಾಲೆ &amp; ತೋಟ</string>
+    <string name="cat_vegetables">ತರಕಾರಿ</string>
+
+    <string name="home_headline">ಇಂದಿನ ಅತಿ ಹೆಚ್ಚು ಲಾಭದ ಮಂಡಿ ಹುಡುಕಿ</string>
+    <string name="home_subtitle">ಹತ್ತಿರದ ಮಾರುಕಟ್ಟೆಗಳನ್ನು ಹೋಲಿಸಲು ಬೆಳೆ ಮತ್ತು ಪ್ರಮಾಣ ಆರಿಸಿ</string>
+    <string name="step_1_crop">ಹಂತ 1 • ನಿಮ್ಮ ಬೆಳೆ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="step_2_load">ಹಂತ 2 • ಬೆಳೆ ಪ್ರಮಾಣ ಎಷ್ಟು?</string>
+    <string name="step_3_vehicle">ಹಂತ 3 • ಸಾಗಣೆ ವಾಹನ</string>
+    <string name="search_crops_hint">ಬೆಳೆ ಹುಡುಕಿ (ಉದಾ. ಕಬ್ಬು, ಅಡಿಕೆ, ಗೋಧಿ)…</string>
+    <string name="compare_mandis_cta">ಉತ್ತಮ ಮಂಡಿ &amp; ಲಾಭ ನೋಡಿ</string>
+    <string name="no_crops_found">ಬೆಳೆ ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="no_crops_hint">ಕಬ್ಬು, ಭತ್ತ, ಗೋಧಿ, ಈರುಳ್ಳಿ ಅಥವಾ ಅಡಿಕೆ ಹುಡುಕಿ</string>
+
+    <string name="saved_plans_title">ನಿಮ್ಮ ಉಳಿಸಿದ ಬೆಳೆ ಯೋಜನೆಗಳು</string>
+    <string name="save_plan_cta">ಲಾಭ ಯೋಜನೆ ಉಳಿಸಿ</string>
+    <string name="plan_saved_toast">ನಿಮ್ಮ ಖಾತೆಯಲ್ಲಿ ಉಳಿಸಲಾಗಿದೆ</string>
+    <string name="load_plan">ತೆರೆಯಿರಿ</string>
+    <string name="delete_plan">ತೆಗೆದುಹಾಕಿ</string>
+
+    <string name="compare_title">ನಿಮ್ಮ ಬೆಳೆಗೆ ಉತ್ತಮ ಮಾರುಕಟ್ಟೆಗಳು</string>
+    <string name="best_mandi_badge">ಅತಿ ಹೆಚ್ಚು ಲಾಭ</string>
+    <string name="closest_mandi_badge">ಹತ್ತಿರದ ಮಂಡಿ</string>
+    <string name="modal_price">ಇಂದಿನ ದರ</string>
+    <string name="distance_label">ದೂರ</string>
+    <string name="transport_cost">ವಾಹನ ವೆಚ್ಚ</string>
+    <string name="gross_value">ಒಟ್ಟು ಮಾರಾಟ</string>
+    <string name="net_profit">ಕೈಗೆ ಸಿಗುವ ಹಣ</string>
+    <string name="extra_profit_msg">ವಾಹನ ವೆಚ್ಚ ಕಳೆದ ನಂತರ %2$s ಗಿಂತ %1$s ಹೆಚ್ಚು ಸಿಗುತ್ತದೆ</string>
+    <string name="view_ai_forecast">ಈಗಲೇ ಮಾರಬೇಕೇ ಅಥವಾ ಕಾಯಬೇಕೇ? (AI)</string>
+    <string name="sources_checked_label">ಗೂಗಲ್ &amp; ಕೃಷಿ ವೆಬ್‌ಸೈಟ್‌ಗಳಿಂದ ಪರಿಶೀಲಿಸಲಾಗಿದೆ</string>
+    <string name="fetch_live_web_cta">ಗೂಗಲ್‌ನಿಂದ ತಾಜಾ ದರ ತರಿಸಿ</string>
+    <string name="sync_notice_offline">ಫೋನ್‌ನಲ್ಲಿ ಉಳಿಸಿದ ದರಗಳನ್ನು ತೋರಿಸಲಾಗುತ್ತಿದೆ. ಇಂಟರ್ನೆಟ್ ಇದ್ದಾಗ ಹೊಸ ದರ ಪಡೆಯಲು ರಿಫ್ರೆಶ್ ಒತ್ತಿರಿ.</string>
+
+    <string name="forecast_title">ಈಗ ಮಾರಾಟ ಮಾಡಬೇಕೇ ಅಥವಾ ಕಾಯಬೇಕೇ?</string>
+    <string name="verdict_sell_now">ಈಗಲೇ ಮಾರಾಟ ಮಾಡಿ</string>
+    <string name="verdict_hold_wait">ಕಾಯಿರಿ / ದಾಸ್ತಾನು ಇಡಿ</string>
+    <string name="horizon_7d">7 ದಿನ</string>
+    <string name="horizon_15d">15 ದಿನ</string>
+    <string name="horizon_30d">30 ದಿನ</string>
+    <string name="past_7d_legend">ಕಳೆದ 7 ದಿನ</string>
+    <string name="forecast_legend">ನಿರೀಕ್ಷಿತ ದರ</string>
+    <string name="projected_price">ನಿರೀಕ್ಷಿತ ದರ</string>
+    <string name="projected_change">ಬದಲಾವಣೆ</string>
+    <string name="projected_impact">ಹೆಚ್ಚು / ನಷ್ಟ (%1$s ಕ್ವಿಂ.)</string>
+    <string name="ai_advisor_title">AgriMitra ಧ್ವನಿ &amp; AI ಸಲಹೆ</string>
+    <string name="ai_advisor_subtitle">ಮಾರುಕಟ್ಟೆ ಮತ್ತು ಹವಾಮಾನದ ಸರಳ ವಿಶ್ಲೇಷಣೆ</string>
+    <string name="ai_generate_btn">ಸಲಹೆ ಪಡೆಯಿರಿ</string>
+    <string name="ai_refresh_btn">ಸಲಹೆ ನವೀಕರಿಸಿ</string>
+    <string name="ai_loading">ಮಾರುಕಟ್ಟೆ ದರ ಮತ್ತು ಹವಾಮಾನ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="ai_ask_title">AgriMitra ಗೆ ಏನಾದರೂ ಕೇಳಿ</string>
+    <string name="ai_ask_hint">ದಾಸ್ತಾನು, ಮಳೆ ಅಥವಾ ಹಬ್ಬದ ಬಗ್ಗೆ ಕೇಳಿ…</string>
+    <string name="ai_send">ಕೇಳಿ</string>
+</resources>

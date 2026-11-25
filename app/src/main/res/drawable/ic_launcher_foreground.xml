@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Left crop leaf -->
+    <path
+        android:fillColor="#FFF8E7"
+        android:pathData="M54,76 C38,74 30,62 30,48 C43,48 52,57 54,70 Z" />
+    <!-- Right crop leaf -->
+    <path
+        android:fillColor="#E8DFC5"
+        android:pathData="M54,76 C70,74 78,62 78,48 C65,48 56,57 54,70 Z" />
+    <!-- Central rising harvest trend arrow -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M51,77 L51,44 L43,44 L54,28 L65,44 L57,44 L57,77 Z" />
+    <!-- Ground horizon ridge -->
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M34,80 Q54,74 74,80 L74,83 Q54,78 34,83 Z" />
+</vector>

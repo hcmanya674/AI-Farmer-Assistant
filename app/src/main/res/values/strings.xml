@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">AgriMitra</string>
+
+    <!-- Navigation -->
+    <string name="nav_crops">1. Crop</string>
+    <string name="nav_compare">2. Markets</string>
+    <string name="nav_forecast">3. Forecast &amp; AI</string>
+
+    <!-- Login / Auth Screen -->
+    <string name="login_headline">Sell Smarter. Earn More Per Quintal.</string>
+    <string name="login_subtitle">Live Mandi rates, transport profit math, and AI price advice built for Indian farmers</string>
+    <string name="login_feature_1_title">Compare Real Money in Hand</string>
+    <string name="login_feature_1_desc">Automatically subtracts tractor, pickup, or truck cost for every nearby Mandi</string>
+    <string name="login_feature_2_title">7–30 Day AI Price Forecast</string>
+    <string name="login_feature_2_desc">Know whether to sell today or hold safely based on crop spoilage and market trends</string>
+    <string name="login_feature_3_title">Save Harvest Plans Safely</string>
+    <string name="login_feature_3_desc">Your crop rates and saved Mandi plans stay safely stored in your farmer account</string>
+    <string name="auth_tab_signin">Sign In</string>
+    <string name="auth_tab_signup">Create Account</string>
+    <string name="auth_card_title_signin">Sign In with Your Account</string>
+    <string name="auth_card_title_signup">Create New Farmer Account</string>
+    <string name="auth_fullname_label">Full Name</string>
+    <string name="auth_fullname_hint">e.g. Ramesh Patil</string>
+    <string name="auth_username_label">Username</string>
+    <string name="auth_username_hint">Letters, numbers, . _ - (min 3)</string>
+    <string name="auth_password_label">Password</string>
+    <string name="auth_password_hint">At least 6 characters</string>
+    <string name="auth_confirm_password_label">Confirm Password</string>
+    <string name="auth_show_password">Show password</string>
+    <string name="auth_hide_password">Hide password</string>
+    <string name="auth_signin_cta">Sign In</string>
+    <string name="auth_signup_cta">Create Account</string>
+    <string name="auth_or_divider">OR</string>
+    <string name="auth_switch_to_signup">New farmer? Create a new account</string>
+    <string name="auth_switch_to_signin">Already have an account? Sign In</string>
+    <string name="login_google_cta">Continue with Google</string>
+    <string name="login_signing_in">Signing in…</string>
+    <string name="login_privacy_note">Secure sign-in • Username accounts save safely on this phone; Google backs up to cloud</string>
+
+    <!-- Profile & Sign Out -->
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_out_title">Sign out of AgriMitra?</string>
+    <string name="sign_out_message">Your saved harvest plans stay safe in your account. You can sign back in anytime.</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Status & Common -->
+    <string name="offline_cached">Saved on Phone</string>
+    <string name="live_synced">Google &amp; Web Live</string>
+    <string name="retry">Try Again</string>
+    <string name="refresh_prices">Update Web Rates</string>
+    <string name="quintal_unit">Qtl</string>
+    <string name="bags_unit">Bags</string>
+    <string name="quintals_full">Quintals (100 kg)</string>
+    <string name="bags_full">Bags (50 kg)</string>
+    <string name="per_quintal">/ Qtl</string>
+    <string name="per_km">/ km</string>
+    <string name="listen_advice">Listen</string>
+    <string name="stop_listening">Stop</string>
+
+    <!-- Categories -->
+    <string name="cat_all">All Crops</string>
+    <string name="cat_cash">Cash &amp; Cane</string>
+    <string name="cat_grains">Grains</string>
+    <string name="cat_spices">Spices &amp; Plantation</string>
+    <string name="cat_vegetables">Vegetables</string>
+
+    <!-- Crops Screen -->
+    <string name="home_headline">Find Today\'s Highest Profit</string>
+    <string name="home_subtitle">Pick your crop and load to compare nearby markets</string>
+    <string name="step_1_crop">Step 1 • Pick Your Crop</string>
+    <string name="step_2_load">Step 2 • How Much Harvest?</string>
+    <string name="step_3_vehicle">Step 3 • Transport Vehicle</string>
+    <string name="search_crops_hint">Search crop (e.g. Sugarcane, Wheat, Onion)…</string>
+    <string name="compare_mandis_cta">Check Best Market &amp; Profit</string>
+    <string name="no_crops_found">No matching crop found</string>
+    <string name="no_crops_hint">Try sugarcane, paddy, wheat, onion, or arecanut</string>
+
+    <!-- Saved Plans -->
+    <string name="saved_plans_title">Your Saved Harvest Plans</string>
+    <string name="save_plan_cta">Save Profit Plan</string>
+    <string name="plan_saved_toast">Saved to your account</string>
+    <string name="load_plan">Open</string>
+    <string name="delete_plan">Remove</string>
+
+    <!-- Market Comparison Screen -->
+    <string name="compare_title">Best Markets for Your Crop</string>
+    <string name="best_mandi_badge">HIGHEST PROFIT</string>
+    <string name="closest_mandi_badge">NEAREST</string>
+    <string name="modal_price">Today\'s Rate</string>
+    <string name="distance_label">Distance</string>
+    <string name="transport_cost">Vehicle Cost</string>
+    <string name="gross_value">Total Sale</string>
+    <string name="net_profit">Money in Hand</string>
+    <string name="extra_profit_msg">You pocket %1$s more than %2$s after travel</string>
+    <string name="view_ai_forecast">Should I Sell Now or Wait? (AI)</string>
+    <string name="sources_checked_label">Checked via Google &amp; Agri Websites</string>
+    <string name="fetch_live_web_cta">Fetch Latest Google &amp; Web Prices</string>
+    <string name="sync_notice_offline">Showing saved market rates on your phone. Tap Refresh when online to pull latest rates from Google and farm websites.</string>
+
+    <!-- Forecast & AI Screen -->
+    <string name="forecast_title">Should You Sell Now or Wait?</string>
+    <string name="verdict_sell_now">SELL NOW</string>
+    <string name="verdict_hold_wait">HOLD &amp; WAIT</string>
+    <string name="horizon_7d">7 Days</string>
+    <string name="horizon_15d">15 Days</string>
+    <string name="horizon_30d">30 Days</string>
+    <string name="past_7d_legend">Last 7 Days</string>
+    <string name="forecast_legend">Expected Rate</string>
+    <string name="projected_price">Expected Rate</string>
+    <string name="projected_change">Change</string>
+    <string name="projected_impact">Extra / Loss (%1$s Qtl)</string>
+    <string name="ai_advisor_title">AgriMitra Voice &amp; AI Advice</string>
+    <string name="ai_advisor_subtitle">Simple advice from web trends &amp; weather</string>
+    <string name="ai_generate_btn">Get Advice</string>
+    <string name="ai_refresh_btn">Update Advice</string>
+    <string name="ai_loading">Checking market prices, weather &amp; demand…</string>
+    <string name="ai_ask_title">Ask AgriMitra Anything</string>
+    <string name="ai_ask_hint">Ask about storage, rain, or festivals…</string>
+    <string name="ai_send">Ask</string>
+</resources>

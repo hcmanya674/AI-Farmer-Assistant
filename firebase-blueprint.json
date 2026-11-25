@@ -1,0 +1,136 @@
+{
+  "entities": {
+    "FarmerProfile": {
+      "title": "FarmerProfile",
+      "description": "Authenticated farmer preferences and default crop settings",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the farmer"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Display name shown in profile badge"
+        },
+        "preferredLanguage": {
+          "type": "string",
+          "enum": ["en", "kn", "hi", "mr"],
+          "description": "Preferred regional UI & voice language code"
+        },
+        "selectedCropId": {
+          "type": "string",
+          "description": "Last selected crop ID from CropCatalog"
+        },
+        "preferredVehicleRate": {
+          "type": "number",
+          "description": "Selected vehicle transport rate per km in INR"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when profile was created (FieldValue.serverTimestamp())"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp of latest update (FieldValue.serverTimestamp())"
+        }
+      },
+      "required": [
+        "userId",
+        "displayName",
+        "preferredLanguage",
+        "selectedCropId",
+        "preferredVehicleRate",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "SavedHarvestLot": {
+      "title": "SavedHarvestLot",
+      "description": "A saved harvest profit calculation & Mandi plan for quick farmer reference",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the farmer owning this saved lot"
+        },
+        "cropId": {
+          "type": "string",
+          "description": "Crop identifier"
+        },
+        "cropName": {
+          "type": "string",
+          "description": "Display name of crop at save time"
+        },
+        "mandiName": {
+          "type": "string",
+          "description": "Best Mandi name for this calculation"
+        },
+        "quantityQuintals": {
+          "type": "number",
+          "description": "Quantity of harvest in quintals"
+        },
+        "modalPricePerQuintal": {
+          "type": "number",
+          "description": "Modal rate per quintal in INR"
+        },
+        "netProfit": {
+          "type": "number",
+          "description": "Calculated net profit after transport in INR"
+        },
+        "transportCost": {
+          "type": "number",
+          "description": "Calculated transport cost in INR"
+        },
+        "verdict": {
+          "type": "string",
+          "enum": ["SELL_NOW", "HOLD_WAIT"],
+          "description": "Price forecast sell/hold recommendation"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional short farmer note"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when lot was saved (FieldValue.serverTimestamp())"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when lot was updated (FieldValue.serverTimestamp())"
+        }
+      },
+      "required": [
+        "userId",
+        "cropId",
+        "cropName",
+        "mandiName",
+        "quantityQuintals",
+        "modalPricePerQuintal",
+        "netProfit",
+        "transportCost",
+        "verdict",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/FarmerProfile"
+      },
+      "description": "Authenticated farmer's profile and regional preferences"
+    },
+    "/users/{userId}/saved_lots/{lotId}": {
+      "schema": {
+        "$ref": "#/entities/SavedHarvestLot"
+      },
+      "description": "User-scoped saved Mandi profit plans for cross-device persistence"
+    }
+  }
+}
